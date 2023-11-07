@@ -29,6 +29,7 @@
 - Instancias
 - Atributos
 - Métodos
+- Constantes
 - Documentación
 - Sobrecarga
 - Alcance (public, protected, private)
