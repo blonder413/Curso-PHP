@@ -1,31 +1,29 @@
 <?php
+/**
+ * Los método son funciones encapsuladas dentro de clases
+ * Su definición es la misma, solo cambia la forma de llamarse
+ */
 class Ejemplo {
-    public $nombre;
     /**
      * El constructor es llamado automáticamente al instanciarse la clase
-     * Al ser un método puede recibir o no parámetros
      */
-    /*
     public function __construct()
     {
-        $this->nombre = 'blonder413';
+        echo 'Clase de ejemplo';
     }
-    */
 
-    /**
-     * En PHP no se pueden sobreescribir métodos auque tengan firma distinta
-     * El término sobrecarga aplica en PHP para los método mágicos propios del lenguaje
-     */
-    public function __construct($nombre = '')
+    public function imprimir()
     {
-        $this->nombre = $nombre;
+        return "hola mundo";
     }
 }
 
 /**
- * Cuando el contructor recibe parámetros estos se envían directamente dentro de ()
- * Los atributos o propiedades pueden llamarse usando el operador ->
+ * El constructor se ejecuta automáticamente al instanciar una clase
+ * Por lo general las instancias se guardan en variables pero no es necesario
+ * También se suele usar () para crear una instancia pero tampoco es necesario
  */
-// $obj = new Ejemplo();
-$obj = new Ejemplo('blonder');
-echo $obj->nombre;
+new Ejemplo;
+new Ejemplo();
+$obj = new Ejemplo();
+echo $obj->imprimir();
