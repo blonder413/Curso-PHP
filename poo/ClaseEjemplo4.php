@@ -31,6 +31,14 @@ class Hijo extends Padre {
     {
         parent::__construct('blonder');
     }
+
+    /**
+     * Podemos acceder a los atributos de la clase padre usando $this
+     */
+    public function cambiar_nombre($nombre)
+    {
+        $this->nombre = $nombre;
+    }
 }
 
 /**
@@ -49,4 +57,7 @@ $obj = new Hijo('blonder413');
  * Aunque no existe un atributo llamado nombre dentro de la clase Hijo
  * se puede acceder a este gracias a que la clase padre sí lo posee
  */
+echo $obj->nombre;
+
+$obj->cambiar_nombre('blonder413');
 echo $obj->nombre;
