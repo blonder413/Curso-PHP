@@ -25,10 +25,12 @@
 - Ciclo while
 - Ciclo do while
 - Ciclo for
+
+POO
 - Definir una clase
 - Instancias
+- Métodos y constructor
 - Atributos
-- Métodos
 - Constantes
 - Documentación
 - Sobrecarga
