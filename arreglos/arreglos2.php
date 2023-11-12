@@ -1,4 +1,8 @@
 <?php
+/**
+ * Los arreglos asociativos se dintinguen por tener un nombre de una clave y un valor asociado
+ * a diferencia de los arreglos simples cuyo índice es númerico empezando por cero
+ */
 $cliente = array(
     'nombre'    => 'juan',
     'apellido'  => 'pérez',
