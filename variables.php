@@ -9,3 +9,6 @@ $nombre = 'blonder';
 $nombre = "blonder413";
 echo ' su nombre es ' . $nombre;
 echo "su nombre es $nombre";
+
+$entero = 413;
+$boolean = true; // false
