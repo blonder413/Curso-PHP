@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Las funciones recursivas son funciones que se llaman a sí misma
+ */
 function cuenta_regresiva($numero)
 {
     if ($numero > 0) {
