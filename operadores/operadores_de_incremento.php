@@ -8,8 +8,11 @@ $a -= $b;
 $a *= $b;
 $a /= $b;
 
-$a = $b++;
-$a = ++$b;
+$a = $b++;  // post incremento
+$a = ++$b;  // pre incremento
+
+$a = $b--;
+$a = --$b;
 
 $a .= $b;
 
