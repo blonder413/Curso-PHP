@@ -18,6 +18,13 @@ $alumno = [
 ];
 
 /**
+ * Si no agregamos un índice automáticamente tomará el siguiente
+ */
+$personas[] = ['juan', 2005];
+$personas[] = ['luis', 2006];
+
+
+/**
  * Para acceder al valor de un arreglo de múltiples dimensiones se deben usar [] para cada dimensión
  * $alumno[2] contendría el arreglo ['ana', 2007]
  * así que para acceder a un valor concreto se debe agregar el índice de dicho arreglo
@@ -62,3 +69,18 @@ echo $clientes[0]['nombre'] . ' ' . $clientes[0]['correo'] . '<br>';
 foreach ($clientes as $key => $value) {
     echo $key . ': ' . $value['nombre'] . ' ' . $value['correo'] . '<br>';
 }
+
+$alumnos = [
+    [
+        'nombre'    => 'claire',
+        'correo'    => 'credfiedl@terrasave.org',
+        'notas'     => [2, 3, 4]
+    ],
+    [
+        'nombre'    => 'jill',
+        'correo'    => 'jvalentine@bsaa.org',
+        'notas'     => [1, 3, 4.5, 5]
+    ]
+];
+
+echo $alumnos[1]['notas'][1];

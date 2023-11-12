@@ -10,15 +10,20 @@
 - Instalar composer
 - Instalar git
 
+Correr servidor PHP
+```
+php -S localhost:9000 hola_mundo.php
+```
+
 ## Conceptos básicos
 - Hola Mundo desde php y apache/nginx
 - Comentarios
 - Variables
 - operadores matemáticos
 - Operadores de incremento y decremento
-- Operadores lógicos
 - Operadores de comparación
 - Funciones
+- Operadores lógicos
 - Arreglos (unidimensionales, multidimensionales, asociativos)
 - Condicional if
 - Condicional switch
@@ -52,6 +57,7 @@ POO
 - Listar registros
 - Actualizar registros
 - Eliminar registros
+- Transacciones
 
 - Formatear fechas
 
