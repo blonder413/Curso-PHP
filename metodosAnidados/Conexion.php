@@ -12,9 +12,9 @@ class Conexion {
 		$connection = array(
 			'driver'		=> 'mysql',
 			'server'		=> 'localhost',
-			'dbName'		=> 'curso_yii_2',
-			'dbUser'		=> 'pruebas',
-            'dbPassword'	=> 'Pass@1234',
+			'dbName'		=> 'blogyii2',
+			'dbUser'		=> 'cursos',
+            'dbPassword'	=> 'Cursos.Blonder413',
 		);
 		try{
 			$this->dbh = new PDO (

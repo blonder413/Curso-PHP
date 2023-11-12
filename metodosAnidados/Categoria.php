@@ -2,12 +2,15 @@
 require_once 'Conexion.php';
 
 class Categoria extends Conexion{
-    private $conexion;
+    private $con;
     private $consulta;
+
+    public $id;
+    public $categoria;
 
     public function __construct()
     {
-        $this->conexion = $this->getConnection();
+        $this->con = $this->getConnection();
     }
 
     public function find()
@@ -36,16 +39,21 @@ class Categoria extends Conexion{
     public function one()
     {
         $this->consulta .= ' LIMIT 0,1';
-        $stmt = $this->conexion->query($this->consulta);
+        $stmt = $this->con->query($this->consulta);
 
 //        return $stmt->fetch(PDO::FETCH_ASSOC);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-        // return $stmt->fetchObject(__CLASS__);
+        $datos = $stmt->fetch(PDO::FETCH_OBJ);
+        if (is_object($datos) and $datos->id) {
+            return $datos;
+        } else {
+            // return new Categoria;
+            throw new Exception("No encontrado", 404);
+        }
     }
 
     public function all()
     {
-        $stmt = $this->conexion->query($this->consulta);
+        $stmt = $this->con->query($this->consulta);
 
 //        return $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $stmt->fetchAll(PDO::FETCH_OBJ);
