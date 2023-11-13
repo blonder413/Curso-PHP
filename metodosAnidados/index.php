@@ -18,6 +18,6 @@ foreach ($datos as $key => $value) {
 
 //$cat = $categoria->find()->one();
 $cat = $categoria->find()
-        ->where('categoria', 'categoría 2', true)
+        ->where('categoria', 'fugas', true)
         ->orderBy()->one();
 echo $cat->categoria;

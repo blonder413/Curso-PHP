@@ -31,18 +31,20 @@ php -S localhost:9000 hola_mundo.php
 - Ciclo do while
 - Ciclo for
 
-POO
+## POO
 - Definir una clase
 - Instancias
 - Métodos y constructor
 - Atributos
 - Constantes
 - Documentación
-- Sobrecarga
 - Alcance (public, protected, private)
+- Sobrecarga
 - Herencia
 - Excepciones
+- Transacciones
 - Traits
+- Sesiones y mensajes Flash
 
 ## mysqli
 - Conexión a base de datos
