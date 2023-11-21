@@ -1,6 +1,11 @@
 <?php
 require_once 'Conexion.php';
 
+enum Order: string {
+    case ASC = 'asc';
+    case DESC = 'desc';
+}
+
 class Categoria extends Conexion{
     private $con;
     private $consulta;
@@ -30,9 +35,9 @@ class Categoria extends Conexion{
         return $this;
     }
 
-    public function orderBy($campo = 'id', $orden = 'desc')
+    public function orderBy($campo = 'id', $orden = Order::DESC)
     {
-        $this->consulta .= ' ORDER BY ' . $campo . ' ' . $orden;
+        $this->consulta .= ' ORDER BY ' . $campo . ' ' . $orden->value;
         return $this;
     }
 

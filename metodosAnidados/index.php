@@ -2,7 +2,8 @@
 require_once 'Categoria.php';
 $categoria = new Categoria();
 
-$datos = $categoria->find()->all();
+// $datos = $categoria->find()->all();
+$datos = $categoria->find()->orderBy('categoria', Order::ASC)->all();
 
 //print_r($datos);
 
@@ -18,6 +19,6 @@ foreach ($datos as $key => $value) {
 
 //$cat = $categoria->find()->one();
 $cat = $categoria->find()
-        ->where('categoria', 'fugas', true)
+        ->where('categoria', 'fuga', true)
         ->orderBy()->one();
 echo $cat->categoria;
