@@ -37,10 +37,12 @@ php -S localhost:9000 hola_mundo.php
 - Métodos y constructor
 - Atributos
 - Constantes
+- Propiedades readonly
 - Documentación
 - Alcance (public, protected, private)
 - Sobrecarga
 - Herencia
+- Enum
 - Excepciones
 - Transacciones
 - Traits
