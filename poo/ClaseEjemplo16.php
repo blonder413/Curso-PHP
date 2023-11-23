@@ -1,5 +1,6 @@
 <?php
 /**
+ * Desde PHP 8.1
  * Es posible declarar constantes finales en clases, de tal manera que no podrán ser sobreescritas
  * en clases hijas
  */
