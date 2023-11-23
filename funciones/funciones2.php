@@ -43,7 +43,7 @@ function sumar($valor1, $valor2 = 0)
  * no es posible definir la función con el valor1 inicial y el 2 obligatorios
  */
 sumar(1);
-sumar(4,13)
+sumar(4,13);
 
 /**
  * Las variables definidas en las funciones son locales,
