@@ -64,6 +64,8 @@ php -S localhost:9000 hola_mundo.php
 - Transacciones
 
 - Formatear fechas
+- Consumir API
+- Fiber
 
 ## Ajax
 - Select dependientes
