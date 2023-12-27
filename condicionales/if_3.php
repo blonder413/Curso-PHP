@@ -9,7 +9,7 @@ if ($a > $b) {
     if ($a < $b) {
         echo "$a es menor que $b";
     } else {
-        echo "$a es igual a $b"
+        echo "$a es igual a $b";
     }
 }
 
