@@ -9,5 +9,13 @@ function fromLength(int $cm): string
     };
 }
 
-
 var_dump(fromLength(300));
+
+$edad = 13;
+$validar = match (true) {
+    $edad < 10 => 'niño',
+    $edad < 18 => 'adolescente',
+    $edad < 50 => 'joven',
+    default => 'anciano'
+};
+echo $validar;

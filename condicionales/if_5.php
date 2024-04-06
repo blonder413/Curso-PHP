@@ -36,3 +36,6 @@ echo 0 ?: 0 ?: 0 ?: 3, PHP_EOL; //3
  */
 $c = $a ?? 0;
 echo $c;
+
+$nombre = "jill";
+$saludo = $nombre ? "hola" : "adios";
