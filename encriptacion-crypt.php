@@ -17,7 +17,7 @@ $hashed_password = crypt('mypassword', $salt);
 
 $user_input = 'mypassword';
 
-echo $hashed_password;  
+echo $hashed_password;
 
 /* Se deben pasar todos los resultados de crypt() como el salt para la comparación de una
    contraseña, para evitar problemas cuando diferentes algoritmos hash son utilizados. (Como
