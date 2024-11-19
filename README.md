@@ -1,4 +1,4 @@
-# Biblioteca PHP 8
+# Curso PHP 8
 
 ## Introducción
 
@@ -71,3 +71,6 @@ php -S localhost:9000 hola_mundo.php
 - Select dependientes
 - Set interval
 - Validación de formularios
+
+## Avanzado
+- Constantes de clase tipificadas (PHP 8.3)
