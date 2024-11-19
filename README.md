@@ -76,3 +76,4 @@ php -S localhost:9000 hola_mundo.php
 - Constantes de clase tipificadas (PHP 8.3)
 - Dynamic class constant fetch (PHP 8.3)
 - Atributo Override (PHP 8.3)
+- Clonación profunda de propiedades de solo lectura(8.3)
