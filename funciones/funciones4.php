@@ -1,56 +1,25 @@
 <?php
+
 /**
- * Se pueden pasar parámetros por referencia anteponiendo & al nombre de la variable
- * Al hacer esto la variable fuera de la función será afectada por la de la función
- * Esto no es algo que se suela usar por el peligro que conlleva modificar datos
- * fuera del contexto de la función
+ * https://www.php.net/manual/es/functions.returning-values.php
+ * Es posible definir un tipo de retorno nulo adicional en las funciones (PHP 7.1.0)
+ * si omitimos ? devolverá un string y como el parámetro $saludo está por defecto null
+ * será obligatorio pasarle el argumento al llamar la función o lanzará un PHP Fatal error:  Uncaught TypeError:
  */
 
-/*
-function incrementar1($num1)
-{
-    return $num1++;
+function saludar($saludo = null): ?string {
+    return $saludo;
 }
 
-function incrementar2($num1)
-{
-    return ++$num1;
-}
-*/
+var_dump(saludar('Hola mundo'));    // string(10) "Hola mundo"
+var_dump(saludar());                // NULL
 
-function incrementar3(&$num1)
-{
-    return ++$num1;
+
+function saludar2($saludo = null): string {
+    return $saludo;
 }
 
-$valor = 5;
+var_dump(saludar2('Hola mundo'));   // string(10) "Hola mundo"
 
-//echo incrementar($valor);
-//echo incrementar(4);
-echo $valor;
-
-
-function incrementar4(&$var)
-{
-    $var++;
-}
-
-$a = 5;
-/**
- * Al pasar la variable $a a la función esta queda referenciada por $var,
- * es decir, cualquier cambio que sufra $var dentro de la función afectará a la variable $a
- */
-incrementar4($a);
-echo $a;
-
-
-/*
- * Si deseamos modificar alguna variable lo recomendable es hacerlo de forma explícita
- */
-function sumar_uno($variable)
-{
-    return $variable = $variable + 1;
-}
-
-$numero = sumar_uno(1);
-echo $numero;
+// PHP Fatal error:  Uncaught TypeError: saludar2(): Return value must be of type string
+var_dump(saludar2());

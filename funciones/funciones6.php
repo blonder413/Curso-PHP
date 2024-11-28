@@ -1,17 +1,26 @@
 <?php
 /**
- * First class callable es una forma de crear callbacks
- * los ... son parte de la sintaxis
+ * Las funciones recursivas son funciones que se llaman a sí misma
  */
-// $caracteres almacena ahora la referencia a la función strlen
-$caracteres = 'strlen'(...);
-
-echo $caracteres("hola blonder") . PHP_EOL;
-
-function saludar()
+function cuenta_regresiva($numero)
 {
-    return 'hola mundo';
+    if ($numero > 0) {
+        print $numero;
+        $numero--;
+        cuenta_regresiva($numero);
+    }
 }
-$saludo = saludar(...);
 
-echo $saludo() . PHP_EOL;
+echo cuenta_regresiva(3);
+
+// 1 * 2 * 3 * 4
+/*
+function factorial($n) {
+    if ($n==1)
+      return 1;
+    else
+      return $n * factorial($n-1);
+}
+
+echo factorial(5);
+*/
