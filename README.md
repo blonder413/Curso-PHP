@@ -48,6 +48,10 @@ php -S localhost:9000 hola_mundo.php
 - Traits
 - Sesiones y mensajes Flash
 
+## Encriptación
+- base64_encode / base64_decode
+- md5
+
 ## mysqli
 - Conexión a base de datos
 - Insertar registros
