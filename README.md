@@ -51,6 +51,7 @@ php -S localhost:9000 hola_mundo.php
 ## Encriptación
 - base64_encode / base64_decode
 - md5
+- sha1
 
 ## mysqli
 - Conexión a base de datos
