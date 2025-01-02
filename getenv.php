@@ -1,4 +1,8 @@
 <?php
+/**
+ * Los datos varían dependiendo de dónde se ejecute,
+ * no es lo mismo correr el script con el intérprete php que en un servidor apache
+ */
 // Example use of getenv()
 $user = getenv('USER');
 echo $user . PHP_EOL;
