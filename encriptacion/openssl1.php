@@ -1,9 +1,9 @@
 <?php
 // print_r(openssl_get_cipher_methods());
 
-$plaintext = "message to be encrypted";
+$plaintext = "Blonder413";
 $cipher = "aes-128-gcm";
-$tag = "blonder413";
+$tag = "MiClaveSecreta";
 
 if (in_array($cipher, openssl_get_cipher_methods())) {
     $ivlen = openssl_cipher_iv_length($cipher);
