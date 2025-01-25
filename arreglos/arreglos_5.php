@@ -2,6 +2,7 @@
 
 /**
  * Desestructuración de arrays simétricos
+ * Desde PHP 7.1
  */
 $datos = [
     [1, "jill"],
