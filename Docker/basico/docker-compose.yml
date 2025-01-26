@@ -1,0 +1,11 @@
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: php-8.4
+    # restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/var/www/html
