@@ -47,3 +47,9 @@ Podemos detener el contenedor sin eliminar todo
 ```bash
 docker stop php-8.4
 ```
+
+## Conectarlo a una red
+
+```bash
+docker network connect mi-red php-8.4
+```
