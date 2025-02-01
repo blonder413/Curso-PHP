@@ -1,0 +1,27 @@
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: php-8.4
+    # restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/var/www/html
+    # Si la red ya existe debemos omitir la asignación
+    networks:
+      - custom_network
+    extra_hosts:
+      # Acá configuramos el archivo /etc/hosts
+      - "miapp.prd:198.168.0.4"
+      - "miapp.qas:192.168.0.13"
+
+networks:
+  # Si la red ya existe debemos omitir la creación
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.42.12.0/28
+          gateway: 172.42.12.1
